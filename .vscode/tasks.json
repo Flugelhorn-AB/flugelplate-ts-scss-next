@@ -5,7 +5,7 @@
       {
         "label": "new react folder and files",
   
-        "command": "mkdir components/${input:dirName} && touch 'components/${input:dirName}/${input:dirName}.tsx' 'components/${input:dirName}/${input:dirName}.module.scss' 'components/${input:dirName}/index.ts' && echo 'import style from \"${input:dirName}.module.scss\"\n\nconst ${input:dirName}=()=>{return (<div className={style.${input:dirName}}></div>)}\n\nexport default ${input:dirName}' >> components/${input:dirName}/${input:dirName}.tsx && echo '@import \"../../sass/main.scss\";\n.${input:dirName}{\n}' >> components/${input:dirName}/${input:dirName}.module.scss && echo 'import ${input:dirName} from \"./${input:dirName}\"\nexport default ${input:dirName}' >> components/${input:dirName}/index.ts",
+        "command": "mkdir components/${input:dirName} && touch 'components/${input:dirName}/${input:dirName}.tsx' 'components/${input:dirName}/${input:dirName}.module.scss' 'components/${input:dirName}/index.ts' && echo 'import style from \"./${input:dirName}.module.scss\"\n\nconst ${input:dirName}=()=>{return (<div className={style.${input:dirName}}></div>)}\n\nexport default ${input:dirName}' >> components/${input:dirName}/${input:dirName}.tsx && echo '@import \"../../sass/main.scss\";\n.${input:dirName}{\n}' >> components/${input:dirName}/${input:dirName}.module.scss && echo 'import ${input:dirName} from \"./${input:dirName}\"\nexport default ${input:dirName}' >> components/${input:dirName}/index.ts",
   
         "type": "shell",
         "problemMatcher": [],
